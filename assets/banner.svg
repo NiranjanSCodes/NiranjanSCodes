@@ -1,112 +1,104 @@
-<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1E293B;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#09090B"/>
+      <stop offset="100%" style="stop-color:#111113"/>
     </linearGradient>
-    <!-- Accent glow -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0" />
-      <stop offset="30%" style="stop-color:#2563EB;stop-opacity:1" />
-      <stop offset="70%" style="stop-color:#F59E0B;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0" />
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#09090B"/>
+      <stop offset="20%"  style="stop-color:#2563EB"/>
+      <stop offset="80%"  style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#09090B"/>
     </linearGradient>
-    <!-- Grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563EB" stroke-width="0.3" opacity="0.15"/>
+    <linearGradient id="fadeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#09090B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#09090B;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="fadeRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#09090B;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#09090B;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="subtleglow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#27272A"/>
     </pattern>
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softglow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="200" fill="url(#bgGrad)" rx="12"/>
+  <!-- Base background -->
+  <rect width="900" height="180" fill="url(#bg)" rx="10"/>
 
-  <!-- Grid overlay -->
-  <rect width="900" height="200" fill="url(#grid)" rx="12"/>
+  <!-- Dot grid -->
+  <rect width="900" height="180" fill="url(#dots)" rx="10"/>
 
-  <!-- Ambient glow orbs -->
-  <circle cx="150" cy="100" r="80" fill="#2563EB" opacity="0.06"/>
-  <circle cx="750" cy="100" r="80" fill="#F59E0B" opacity="0.06"/>
+  <!-- Edge fades over dot grid -->
+  <rect x="0"   y="0" width="180" height="180" fill="url(#fadeLeft)"/>
+  <rect x="720" y="0" width="180" height="180" fill="url(#fadeRight)"/>
+
+  <!-- Ambient blue glow left -->
+  <ellipse cx="180" cy="90" rx="160" ry="70" fill="#2563EB" opacity="0.04"/>
+
+  <!-- Ambient amber glow right -->
+  <ellipse cx="720" cy="90" rx="160" ry="70" fill="#F59E0B" opacity="0.04"/>
+
+  <!-- Top hairline -->
+  <rect x="0" y="0" width="900" height="1" fill="url(#lineGrad)" opacity="0.4"/>
 
   <!-- Bottom accent line -->
-  <rect x="0" y="188" width="900" height="2" fill="url(#accentGrad)" rx="1"/>
-
-  <!-- Top accent line -->
-  <rect x="0" y="10" width="900" height="1" fill="url(#accentGrad)" rx="1" opacity="0.5"/>
-
-  <!-- Java brackets decoration - left -->
-  <text x="48" y="115" font-family="monospace" font-size="64" fill="#2563EB" opacity="0.12" font-weight="bold">{</text>
-
-  <!-- Java brackets decoration - right -->
-  <text x="818" y="115" font-family="monospace" font-size="64" fill="#F59E0B" opacity="0.12" font-weight="bold">}</text>
-
-  <!-- Dot decorations top right -->
-  <circle cx="820" cy="30" r="2" fill="#F59E0B" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="834" cy="30" r="2" fill="#F59E0B" opacity="0.4">
-    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" begin="0.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="848" cy="30" r="2" fill="#F59E0B" opacity="0.2">
-    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="2s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Main name - Niranjan Sharma -->
-  <text x="450" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700"
-        fill="white" text-anchor="middle" letter-spacing="1" filter="url(#glow)">
-    Niranjan Sharma
-  </text>
-
-  <!-- Accent underline under name -->
-  <rect x="290" y="96" width="320" height="2" fill="url(#accentGrad)" rx="1">
-    <animate attributeName="width" values="0;320" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-    <animate attributeName="x" values="450;290" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  <rect x="0" y="177" width="900" height="2" fill="url(#lineGrad)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Role line -->
-  <text x="450" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400"
-        fill="#94A3B8" text-anchor="middle" letter-spacing="2">
-    BACKEND JAVA DEVELOPER  ·  DAM @ IES ABASTOS, VALENCIA
-  </text>
+  <!-- Left vertical rule -->
+  <rect x="64" y="32" width="1" height="116" fill="#2563EB" opacity="0.3"/>
 
-  <!-- Tag pills -->
-  <!-- Java pill -->
-  <rect x="248" y="148" width="68" height="24" rx="12" fill="#2563EB" opacity="0.2" stroke="#2563EB" stroke-width="1" opacity="0.6"/>
-  <text x="282" y="164" font-family="monospace" font-size="11" fill="#60A5FA" text-anchor="middle" font-weight="600">Java</text>
+  <!-- Left bracket top tick -->
+  <rect x="64" y="32" width="12" height="1" fill="#2563EB" opacity="0.5"/>
 
-  <!-- Maven pill -->
-  <rect x="326" y="148" width="68" height="24" rx="12" fill="#2563EB" opacity="0.2" stroke="#2563EB" stroke-width="1" opacity="0.4"/>
-  <text x="360" y="164" font-family="monospace" font-size="11" fill="#60A5FA" text-anchor="middle" font-weight="600">Maven</text>
+  <!-- Left bracket bottom tick -->
+  <rect x="64" y="148" width="12" height="1" fill="#2563EB" opacity="0.5"/>
 
-  <!-- OOP pill -->
-  <rect x="404" y="148" width="68" height="24" rx="12" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1" opacity="0.5"/>
-  <text x="438" y="164" font-family="monospace" font-size="11" fill="#FCD34D" text-anchor="middle" font-weight="600">OOP</text>
+  <!-- Name -->
+  <text x="92" y="82"
+        font-family="'SF Mono','Fira Code','Consolas',monospace"
+        font-size="34" font-weight="700"
+        fill="#FAFAFA"
+        filter="url(#subtleglow)"
+        letter-spacing="-0.5">Niranjan Sharma</text>
 
-  <!-- Git pill -->
-  <rect x="482" y="148" width="68" height="24" rx="12" fill="#2563EB" opacity="0.2" stroke="#2563EB" stroke-width="1" opacity="0.4"/>
-  <text x="516" y="164" font-family="monospace" font-size="11" fill="#60A5FA" text-anchor="middle" font-weight="600">Git</text>
+  <!-- Blinking cursor -->
+  <rect x="444" y="56" width="3" height="30" fill="#2563EB" rx="1">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Role subtitle -->
+  <text x="93" y="110"
+        font-family="'SF Mono','Fira Code','Consolas',monospace"
+        font-size="13" font-weight="400"
+        fill="#71717A"
+        letter-spacing="1.5">BACKEND JAVA · DAM @ IES ABASTOS · VALENCIA, ES</text>
 
   <!-- Open to work pill -->
-  <rect x="560" y="148" width="108" height="24" rx="12" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1" opacity="0.6"/>
-  <circle cx="576" cy="160" r="3" fill="#10B981">
-    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  <rect x="718" y="74" width="126" height="28" rx="14"
+        fill="#09090B" stroke="#166534" stroke-width="1"/>
+  <circle cx="736" cy="88" r="4" fill="#22C55E">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="625" y="164" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#34D399" text-anchor="middle" font-weight="600">Open to Work</text>
+  <text x="748" y="93"
+        font-family="'SF Mono','Fira Code','Consolas',monospace"
+        font-size="11" fill="#22C55E" font-weight="500">Open to work</text>
+
+  <!-- Language tags -->
+  <text x="93" y="142"
+        font-family="'SF Mono','Fira Code','Consolas',monospace"
+        font-size="10" fill="#3F3F46" letter-spacing="2">EN · ES · नेपाली</text>
+
+  <!-- Amber stacked lines decoration -->
+  <rect x="680" y="112" width="40" height="1" fill="#F59E0B" opacity="0.4"/>
+  <rect x="692" y="118" width="28" height="1" fill="#F59E0B" opacity="0.25"/>
+  <rect x="700" y="124" width="20" height="1" fill="#F59E0B" opacity="0.15"/>
 
 </svg>
+
