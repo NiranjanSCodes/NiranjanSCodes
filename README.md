@@ -124,7 +124,6 @@ public class NiranjanSharma extends Developer {
 </div>
 
 ## 🐍 Contributions
-```
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake.svg"/>
@@ -132,6 +131,7 @@ public class NiranjanSharma extends Developer {
 </picture>
 ```
 ---
+```
 
 
 ## 📅 Currently
