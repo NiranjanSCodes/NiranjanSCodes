@@ -122,6 +122,7 @@ public class NiranjanSharma extends Developer {
 <img src="https://github-readme-streak-stats.herokuapp.com?user=NiranjanSCodes&theme=tokyonight&background=0F172A&border=2563EB&stroke=2563EB&ring=F59E0B&fire=F59E0B&currStreakNum=FFFFFF&sideNums=94A3B8&currStreakLabel=60A5FA&sideLabels=60A5FA&dates=475569" alt="GitHub Streak"/>
 
 </div>
+
 ## 🐍 Contributions
 
 <picture>
