@@ -129,9 +129,6 @@ public class NiranjanSharma extends Developer {
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake.svg"/>
   <img alt="contribution snake" src="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake.svg" width="100%"/>
 </picture>
-```
----
-```
 
 
 ## 📅 Currently
