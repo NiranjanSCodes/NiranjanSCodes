@@ -12,9 +12,9 @@
 <br/>
 
 <!-- PROFILE VIEWS + FOLLOWERS -->
-<img src="https://komarev.com/ghpvc/?username=NiranjanSCodes&style=for-the-badge&color=2563EB&label=PROFILE+VIEWS" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=niranjanscodes&style=for-the-badge&color=2563EB&label=PROFILE+VIEWS" alt="Profile views"/>
 &nbsp;
-<img src="https://img.shields.io/github/followers/NiranjanSCodes?style=for-the-badge&color=2563EB&labelColor=0F172A&label=FOLLOWERS" alt="Followers"/>
+<img src="https://img.shields.io/github/followers/niranjanscodes?style=for-the-badge&color=2563EB&labelColor=0F172A&label=FOLLOWERS" alt="Followers"/>
 
 </div>
 
@@ -70,8 +70,8 @@ public class NiranjanSharma extends Developer {
     <td width="50%" valign="top">
       <h3 align="center">🤖 Mini AI Assistant</h3>
       <p align="center">
-        <a href="https://github.com/NiranjanSCodes/mini-ai-assistant">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=NiranjanSCodes&repo=mini-ai-assistant&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&icon_color=F59E0B" alt="Mini AI Assistant"/>
+        <a href="https://github.com/niranjanscodes/mini-ai-assistant">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=niranjanscodes&repo=mini-ai-assistant&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&icon_color=F59E0B" alt="Mini AI Assistant"/>
         </a>
       </p>
       <p align="center">
@@ -87,8 +87,8 @@ public class NiranjanSharma extends Developer {
     <td width="50%" valign="top">
       <h3 align="center">🏦 Banking System Java</h3>
       <p align="center">
-        <a href="https://github.com/NiranjanSCodes/banking-system-java">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=NiranjanSCodes&repo=banking-system-java&theme=tokyonight&bg_color=0F172A&border_color=F59E0B&title_color=FCD34D&text_color=94A3B8&icon_color=2563EB" alt="Banking System Java"/>
+        <a href="https://github.com/niranjanscodes/banking-system-java">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=niranjanscodes&repo=banking-system-java&theme=tokyonight&bg_color=0F172A&border_color=F59E0B&title_color=FCD34D&text_color=94A3B8&icon_color=2563EB" alt="Banking System Java"/>
         </a>
       </p>
       <p align="center">
@@ -112,22 +112,22 @@ public class NiranjanSharma extends Developer {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=NiranjanSCodes&show_icons=true&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&icon_color=F59E0B&hide_border=false&count_private=true" alt="GitHub Stats" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=niranjanscodes&show_icons=true&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&icon_color=F59E0B&hide_border=false&count_private=true" alt="GitHub Stats" height="170"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NiranjanSCodes&layout=compact&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&hide_border=false" alt="Top Languages" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=niranjanscodes&layout=compact&theme=tokyonight&bg_color=0F172A&border_color=2563EB&title_color=60A5FA&text_color=94A3B8&hide_border=false" alt="Top Languages" height="170"/>
 
 <br/>
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=NiranjanSCodes&theme=tokyonight&background=0F172A&border=2563EB&stroke=2563EB&ring=F59E0B&fire=F59E0B&currStreakNum=FFFFFF&sideNums=94A3B8&currStreakLabel=60A5FA&sideLabels=60A5FA&dates=475569" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=niranjanscodes&theme=tokyonight&background=0F172A&border=2563EB&stroke=2563EB&ring=F59E0B&fire=F59E0B&currStreakNum=FFFFFF&sideNums=94A3B8&currStreakLabel=60A5FA&sideLabels=60A5FA&dates=475569" alt="GitHub Streak"/>
 
 </div>
 
 ## 🐍 Contributions
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake.svg"/>
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/NiranjanSCodes/NiranjanSCodes/output/snake.svg" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/niranjanscodes/niranjanscodes/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/niranjanscodes/niranjanscodes/output/snake.svg"/>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/niranjanscodes/niranjanscodes/output/snake.svg" width="100%"/>
 </picture>
 
 
@@ -151,8 +151,8 @@ public class NiranjanSharma extends Developer {
   <img src="https://img.shields.io/badge/LinkedIn-Niranjan_Sharma-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 &nbsp;
-<a href="https://github.com/NiranjanSCodes">
-  <img src="https://img.shields.io/badge/GitHub-NiranjanSCodes-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<a href="https://github.com/niranjanscodes">
+  <img src="https://img.shields.io/badge/GitHub-niranjanscodes-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 <br/>
